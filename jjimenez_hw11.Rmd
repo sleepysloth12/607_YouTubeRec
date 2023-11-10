@@ -1,10 +1,10 @@
 ---
-title: "Youtube Reccomender System Analysis"
+title: "Youtube Recommender System Analysis"
 author: "Jean Jimenez"
 date: "2023-11-07"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -61,6 +61,8 @@ Users are encouraged to log-in to YouTube. While it is not necessary, the follow
 
 After users sign in, they are recommended the most popular videos on the platform, as well as whatever they were doing when they signed in. Most likely is that as the user keeps watching and interacting, the algorithm starts to suggest those types of videos. Amount of time spent on video is tracked. If a lot of time is spent on video, suggest that type of video (the videos have tags). If a user spends small amount of time on a video, suggest less of that. If the user likes and comments on something, suggest more content from that same creator. Also, users are recommended stuff that people that have similar interest watch.
 
+Youtube has a [BlogPost](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/) summarizing how their recommender algorithm works. Accordin to the blog post, YouTube has recommendations based on viewing habits. Users with similar habits and hobbies are recommended similar videos. Additionally, YouTube tracks clicks, watchtime, survey responses, sharing, likes, and dislikes for recommendations.
+
 # Recommendations for Improvement
 
 Perhaps since YouTube is owned by Google they use Google search history to generate recommendations of videos to watch. Maybe they can go one step further and use Google Chrome internet history and cookies to generate video suggestions. If user has an Android, use the phone data (google assistant/ song search/ maps, etc). All of these improvements are VERY invasive privacy wise and will never happen hopefully. However, the data obtained can possibly help generate very very good suggestions on things the user is interested in.
@@ -68,3 +70,5 @@ Perhaps since YouTube is owned by Google they use Google search history to gener
 YouTube has a dislike button but it doesn't use much. YouTube should implement a Reddit-like system where videos that have net-negative likes are recommended less compared to videos that have a big net positive likes.
 
 Allow non-premium members to download videos. By allowing offline video viewing, you can track and recommend those videos that are mostly downloaded (because they are probably good since people downloaded them to watch when no internet access).
+
+YouTube should also have an A.I. algorithm labeling and classifying each videos into categories/ giving it tags to improve the recommender system.
